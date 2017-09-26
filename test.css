@@ -1,3 +1,24 @@
-dfsdf
-smgj
-sdf
+.flex-container {
+    display: flex;  
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    flex: 1 100%;
+
+}
+    .aside1 { order: 1; } 
+    .aside2   { order: 2; }
+    .aside3 { order: 3; }
+    .footer  { order: 4; }
+
+.header {background: coral;}
+.footer {background: lightgreen;}
+.aside1 {background: moccasin;}
+.aside2 {background: violet;}
+.aside3 {background: blue;}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1; }
+}
