@@ -12,3 +12,161 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    background: url(images/bg.jpg) 50% 0 no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1170px; /* максимальная ширина контент блоков на странице */
+    margin: 0 auto; /* центрирование блока */
+}
+#header-left {
+    float: left;
+    width: 60%;
+}
+#header-right {
+    float: left;
+    width: 40%;
+}
+
+#header-shadow {
+    background: rgba(0, 0, 0, 0.4);
+}
+h1 {
+   margin-bottom: 30px;
+   font-size: 60px;
+   font-weight: 100;
+   line-height: 1.1;
+}
+#header-left h1 {
+    font-size: 72px;
+    margin-top: 50px;
+    line-height: 1.1;
+}
+#header-left h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+#header-left p {
+    font-size: 18px;
+    margin-bottom: 70px;
+    letter-spacing: 1px; /* увеличиваем межбуквенный интервал */
+}
+#header-left h1 strong {
+    font-weight: 400;
+}
+header .wrapper {
+    padding: 100px 15px 50px 50px;
+}
+#header-left h1, #header-left h2, #header-left p {
+    margin-right: 40px;
+}
+#header-right img {
+    max-width: 252px;
+}
+#navbar-top {
+    min-height: 70px; 
+    background-color: #181b3d;
+    box-shadow: 0 0px 10px rgba(0,0,0,.2); 
+}
+#navbar-top .logo {
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px; /* высота межстрочного интервала текста */
+    font-weight: 700; 
+    padding: 15px 15px; /* внутренние отступы в формате двух значений: слева-справа, сверху-снизу */
+    display: block;
+    float: left; /* прижимаем логотип к краю левой части блока */
+    text-decoration: none; /* отключаем подчеркивание ссылки */
+}
+#navbar-top menu {
+    list-style: none; /* отключаем отображение маркеров */
+    float: right; /* прижимаем меню к правой границе блока */
+    margin: 0; /* сбрасываем внешние отступы */
+    padding: 0; /* сбрасываем внутренние отступы */
+}
+#navbar-top menu li {
+    float: left; /* чтобы пункты меню располагались в линию друг за другом */
+    display: block; /* делаем пункты блочными элементами */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#navbar-top menu li a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none; 
+    line-height: 70px; /* данный межстрочный интервал позволяет выравнить пункты меню вертикально по центру, за счет того что его значение равно высоте элемента #navbar-top  */
+    display: block; /* делаем ссылки блочными элементами */
+}
+/* меняем цвет активных (выбранных) ссылок, а также тех на которые наведен курсор */ 
+#navbar-top menu li a:hover, #navbar-top menu li.active a {
+    color: #0099ff;
+}
+div.header {
+    width: 80%; 
+    margin: 0 auto; /* выравниваем блок по центру */
+    text-align: center; /* выравниванием содержимое блока по центру */
+}
+#features {
+    background: #fff; /* белый фон блока */
+    padding-top: 100px;
+}
+#features h1 {
+    color: #111; 
+}
+#features p {
+    font-weight: 300;
+    letter-spacing: 0.5px; /* увеличиваем интервал между символами в тексте */
+    margin: 0 0 10px; /* внешний отступ в формате: сверху, слева-справа и снизу, т.е. по сути мы сбрасываем отступы со всех сторон, кроме низа в 10 пикселей */
+    color: #222;
+}
+.underline i.fa {
+    font-size: 20px; /* увеличиваем размер иконки до 20х20 пикселей */
+    color: #0099FF; /* цвет иконки */
+}
+.underline {
+    position: relative;
+    font-size: 20px;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.underline:before, .underline:after {
+    background-color: #777; /* цвет фона, но в нашем случае это цвет линий  */
+    position: absolute; /* абсолютное позиционирование элементов внутри .underline */
+    content: ""; /* пустой контент псевдоэлементов */
+    width: 150px; /* ширина псевдоэлемнета - у нас это длинна линии */
+    height: 1px; /* высота псевдоэлемента - толщина линии */
+    top: 50%; /* отступ сверху линии на 50% от высоты .underline (10px, потому что у .underline высота 20px) */
+}
+.underline:before {
+    left: 0; /* прижимаем линию к левому краю .underline */
+}
+.underline:after {
+    right: 0; /* прижимаем линию к правому краю .underline */
+}
+
+#features-image {
+    float: left;
+    width: 30%;
+}
+#features-image img {
+    width: 252px;
+}
+#features-list {
+    float: left;
+    width: 70%;
+}
+#features-list .item {
+    width: 50%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
